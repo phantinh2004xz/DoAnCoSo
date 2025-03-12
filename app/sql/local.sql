@@ -134,7 +134,7 @@ CREATE TABLE `wp_options` (
   PRIMARY KEY (`option_id`),
   UNIQUE KEY `option_name` (`option_name`),
   KEY `autoload` (`autoload`)
-) ENGINE=InnoDB AUTO_INCREMENT=213 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=232 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -143,11 +143,11 @@ CREATE TABLE `wp_options` (
 
 LOCK TABLES `wp_options` WRITE;
 /*!40000 ALTER TABLE `wp_options` DISABLE KEYS */;
-INSERT INTO `wp_options` VALUES (1,'cron','a:11:{i:1741778885;a:1:{s:17:\"wp_update_plugins\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:10:\"twicedaily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:43200;}}}i:1741780685;a:1:{s:16:\"wp_update_themes\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:10:\"twicedaily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:43200;}}}i:1741780686;a:1:{s:34:\"wp_privacy_delete_old_export_files\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:6:\"hourly\";s:4:\"args\";a:0:{}s:8:\"interval\";i:3600;}}}i:1741816756;a:1:{s:21:\"wp_update_user_counts\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:10:\"twicedaily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:43200;}}}i:1741820285;a:1:{s:16:\"wp_version_check\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:10:\"twicedaily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:43200;}}}i:1741859886;a:1:{s:32:\"recovery_mode_clean_expired_keys\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}}i:1741859956;a:2:{s:19:\"wp_scheduled_delete\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}s:25:\"delete_expired_transients\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}}i:1741859961;a:1:{s:30:\"wp_scheduled_auto_draft_delete\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}}i:1742291993;a:1:{s:30:\"wp_delete_temp_updater_backups\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:6:\"weekly\";s:4:\"args\";a:0:{}s:8:\"interval\";i:604800;}}}i:1742378286;a:1:{s:30:\"wp_site_health_scheduled_check\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:6:\"weekly\";s:4:\"args\";a:0:{}s:8:\"interval\";i:604800;}}}s:7:\"version\";i:2;}','on');
+INSERT INTO `wp_options` VALUES (1,'cron','a:11:{i:1741795086;a:1:{s:34:\"wp_privacy_delete_old_export_files\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:6:\"hourly\";s:4:\"args\";a:0:{}s:8:\"interval\";i:3600;}}}i:1741816756;a:1:{s:21:\"wp_update_user_counts\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:10:\"twicedaily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:43200;}}}i:1741820285;a:1:{s:16:\"wp_version_check\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:10:\"twicedaily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:43200;}}}i:1741822085;a:1:{s:17:\"wp_update_plugins\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:10:\"twicedaily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:43200;}}}i:1741823885;a:1:{s:16:\"wp_update_themes\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:10:\"twicedaily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:43200;}}}i:1741859886;a:1:{s:32:\"recovery_mode_clean_expired_keys\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}}i:1741859956;a:2:{s:19:\"wp_scheduled_delete\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}s:25:\"delete_expired_transients\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}}i:1741859961;a:1:{s:30:\"wp_scheduled_auto_draft_delete\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}}i:1742291993;a:1:{s:30:\"wp_delete_temp_updater_backups\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:6:\"weekly\";s:4:\"args\";a:0:{}s:8:\"interval\";i:604800;}}}i:1742378286;a:1:{s:30:\"wp_site_health_scheduled_check\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:6:\"weekly\";s:4:\"args\";a:0:{}s:8:\"interval\";i:604800;}}}s:7:\"version\";i:2;}','on');
 INSERT INTO `wp_options` VALUES (2,'siteurl','http://newvn.local','on');
 INSERT INTO `wp_options` VALUES (3,'home','http://newvn.local','on');
-INSERT INTO `wp_options` VALUES (4,'blogname','hello','on');
-INSERT INTO `wp_options` VALUES (5,'blogdescription','','on');
+INSERT INTO `wp_options` VALUES (4,'blogname','Theme NewsMaster','on');
+INSERT INTO `wp_options` VALUES (5,'blogdescription','Demo cách tạo một theme đơn giản','on');
 INSERT INTO `wp_options` VALUES (6,'users_can_register','0','on');
 INSERT INTO `wp_options` VALUES (7,'admin_email','dev-email@wpengine.local','on');
 INSERT INTO `wp_options` VALUES (8,'start_of_week','1','on');
@@ -229,7 +229,7 @@ INSERT INTO `wp_options` VALUES (83,'page_on_front','0','on');
 INSERT INTO `wp_options` VALUES (84,'default_post_format','0','on');
 INSERT INTO `wp_options` VALUES (85,'link_manager_enabled','0','on');
 INSERT INTO `wp_options` VALUES (86,'finished_splitting_shared_terms','1','on');
-INSERT INTO `wp_options` VALUES (87,'site_icon','0','on');
+INSERT INTO `wp_options` VALUES (87,'site_icon','40','on');
 INSERT INTO `wp_options` VALUES (88,'medium_large_size_w','768','on');
 INSERT INTO `wp_options` VALUES (89,'medium_large_size_h','0','on');
 INSERT INTO `wp_options` VALUES (90,'wp_page_for_privacy_policy','3','on');
@@ -274,12 +274,10 @@ INSERT INTO `wp_options` VALUES (137,'_site_transient_php_check_a34f4a08303dd29c
 INSERT INTO `wp_options` VALUES (142,'can_compress_scripts','0','on');
 INSERT INTO `wp_options` VALUES (158,'theme_mods_twentytwentyfive','a:1:{s:16:\"sidebars_widgets\";a:2:{s:4:\"time\";i:1741687203;s:4:\"data\";a:3:{s:19:\"wp_inactive_widgets\";a:0:{}s:9:\"sidebar-1\";a:3:{i:0;s:7:\"block-2\";i:1;s:7:\"block-3\";i:2;s:7:\"block-4\";}s:9:\"sidebar-2\";a:2:{i:0;s:7:\"block-5\";i:1;s:7:\"block-6\";}}}}','off');
 INSERT INTO `wp_options` VALUES (159,'current_theme','NewsMaster','auto');
-INSERT INTO `wp_options` VALUES (160,'theme_mods_newspaperly','a:4:{i:0;b:0;s:18:\"nav_menu_locations\";a:1:{s:6:\"menu-1\";i:2;}s:18:\"custom_css_post_id\";i:-1;s:16:\"sidebars_widgets\";a:2:{s:4:\"time\";i:1741777118;s:4:\"data\";a:9:{s:19:\"wp_inactive_widgets\";a:0:{}s:13:\"banner-widget\";a:1:{i:0;s:13:\"custom_html-8\";}s:9:\"sidebar-1\";a:2:{i:0;s:14:\"recent-posts-2\";i:1;s:13:\"custom_html-9\";}s:14:\"footerwidget-1\";a:1:{i:0;s:13:\"custom_html-5\";}s:14:\"footerwidget-2\";a:1:{i:0;s:13:\"custom_html-6\";}s:14:\"footerwidget-3\";a:1:{i:0;s:13:\"custom_html-7\";}s:14:\"headerwidget-1\";a:1:{i:0;s:13:\"custom_html-2\";}s:14:\"headerwidget-2\";a:1:{i:0;s:13:\"custom_html-3\";}s:14:\"headerwidget-3\";a:1:{i:0;s:13:\"custom_html-4\";}}}}','off');
+INSERT INTO `wp_options` VALUES (160,'theme_mods_newspaperly','a:4:{i:0;b:0;s:18:\"nav_menu_locations\";a:1:{s:6:\"menu-1\";i:2;}s:18:\"custom_css_post_id\";i:-1;s:16:\"sidebars_widgets\";a:2:{s:4:\"time\";i:1741779570;s:4:\"data\";a:9:{s:19:\"wp_inactive_widgets\";a:5:{i:0;s:7:\"block-2\";i:1;s:7:\"block-3\";i:2;s:7:\"block-4\";i:3;s:7:\"block-5\";i:4;s:7:\"block-6\";}s:13:\"banner-widget\";a:1:{i:0;s:13:\"custom_html-8\";}s:9:\"sidebar-1\";a:2:{i:0;s:14:\"recent-posts-2\";i:1;s:13:\"custom_html-9\";}s:14:\"footerwidget-1\";a:1:{i:0;s:13:\"custom_html-5\";}s:14:\"footerwidget-2\";a:1:{i:0;s:13:\"custom_html-6\";}s:14:\"footerwidget-3\";a:1:{i:0;s:13:\"custom_html-7\";}s:14:\"headerwidget-1\";a:1:{i:0;s:13:\"custom_html-2\";}s:14:\"headerwidget-2\";a:1:{i:0;s:13:\"custom_html-3\";}s:14:\"headerwidget-3\";a:1:{i:0;s:13:\"custom_html-4\";}}}}','off');
 INSERT INTO `wp_options` VALUES (161,'theme_switched','','auto');
 INSERT INTO `wp_options` VALUES (164,'_transient_wp_styles_for_blocks','a:2:{s:4:\"hash\";s:32:\"8c7d46a72d7d4591fc1dd9485bedb304\";s:6:\"blocks\";a:5:{s:11:\"core/button\";s:0:\"\";s:14:\"core/site-logo\";s:0:\"\";s:18:\"core/post-template\";s:120:\":where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}\";s:12:\"core/columns\";s:102:\":where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}\";s:14:\"core/pullquote\";s:69:\":root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}\";}}','on');
 INSERT INTO `wp_options` VALUES (167,'finished_updating_comment_type','1','auto');
-INSERT INTO `wp_options` VALUES (179,'_site_transient_timeout_theme_roots','1741778900','off');
-INSERT INTO `wp_options` VALUES (180,'_site_transient_theme_roots','a:5:{s:10:\"NewsMaster\";s:7:\"/themes\";s:11:\"newspaperly\";s:7:\"/themes\";s:16:\"twentytwentyfive\";s:7:\"/themes\";s:16:\"twentytwentyfour\";s:7:\"/themes\";s:17:\"twentytwentythree\";s:7:\"/themes\";}','off');
 INSERT INTO `wp_options` VALUES (182,'_transient_health-check-site-status-result','{\"good\":17,\"recommended\":3,\"critical\":0}','on');
 INSERT INTO `wp_options` VALUES (185,'_site_transient_timeout_community-events-d41d8cd98f00b204e9800998ecf8427e','1741820252','off');
 INSERT INTO `wp_options` VALUES (186,'_site_transient_community-events-d41d8cd98f00b204e9800998ecf8427e','a:4:{s:9:\"sandboxed\";b:0;s:5:\"error\";N;s:8:\"location\";a:1:{s:2:\"ip\";b:0;}s:6:\"events\";a:0:{}}','off');
@@ -296,11 +294,13 @@ INSERT INTO `wp_options` VALUES (196,'_transient_dash_v2_88ae138922fe95674369b1c
 INSERT INTO `wp_options` VALUES (198,'superbaddons_pre_activation','1741776066','off');
 INSERT INTO `wp_options` VALUES (200,'wp_calendar_block_has_published_posts','1','auto');
 INSERT INTO `wp_options` VALUES (201,'nav_menu_options','a:1:{s:8:\"auto_add\";a:0:{}}','auto');
-INSERT INTO `wp_options` VALUES (205,'_site_transient_update_themes','O:8:\"stdClass\":5:{s:12:\"last_checked\";i:1741777102;s:7:\"checked\";a:5:{s:10:\"NewsMaster\";s:3:\"1.0\";s:11:\"newspaperly\";s:3:\"6.2\";s:16:\"twentytwentyfive\";s:3:\"1.0\";s:16:\"twentytwentyfour\";s:3:\"1.3\";s:17:\"twentytwentythree\";s:3:\"1.6\";}s:8:\"response\";a:1:{s:16:\"twentytwentyfive\";a:6:{s:5:\"theme\";s:16:\"twentytwentyfive\";s:11:\"new_version\";s:3:\"1.1\";s:3:\"url\";s:46:\"https://wordpress.org/themes/twentytwentyfive/\";s:7:\"package\";s:62:\"https://downloads.wordpress.org/theme/twentytwentyfive.1.1.zip\";s:8:\"requires\";s:3:\"6.7\";s:12:\"requires_php\";s:3:\"7.2\";}}s:9:\"no_update\";a:3:{s:11:\"newspaperly\";a:6:{s:5:\"theme\";s:11:\"newspaperly\";s:11:\"new_version\";s:3:\"6.2\";s:3:\"url\";s:41:\"https://wordpress.org/themes/newspaperly/\";s:7:\"package\";s:57:\"https://downloads.wordpress.org/theme/newspaperly.6.2.zip\";s:8:\"requires\";b:0;s:12:\"requires_php\";s:3:\"4.0\";}s:16:\"twentytwentyfour\";a:6:{s:5:\"theme\";s:16:\"twentytwentyfour\";s:11:\"new_version\";s:3:\"1.3\";s:3:\"url\";s:46:\"https://wordpress.org/themes/twentytwentyfour/\";s:7:\"package\";s:62:\"https://downloads.wordpress.org/theme/twentytwentyfour.1.3.zip\";s:8:\"requires\";s:3:\"6.4\";s:12:\"requires_php\";s:3:\"7.0\";}s:17:\"twentytwentythree\";a:6:{s:5:\"theme\";s:17:\"twentytwentythree\";s:11:\"new_version\";s:3:\"1.6\";s:3:\"url\";s:47:\"https://wordpress.org/themes/twentytwentythree/\";s:7:\"package\";s:63:\"https://downloads.wordpress.org/theme/twentytwentythree.1.6.zip\";s:8:\"requires\";s:3:\"6.1\";s:12:\"requires_php\";s:3:\"5.6\";}}s:12:\"translations\";a:0:{}}','off');
-INSERT INTO `wp_options` VALUES (209,'theme_mods_NewsMaster','a:2:{i:0;b:0;s:18:\"nav_menu_locations\";a:1:{s:9:\"main_menu\";i:2;}}','on');
-INSERT INTO `wp_options` VALUES (210,'_site_transient_timeout_wp_theme_files_patterns-da06e84dc07ee157c2d4d2a943b74be6','1741778918','off');
-INSERT INTO `wp_options` VALUES (211,'_site_transient_wp_theme_files_patterns-da06e84dc07ee157c2d4d2a943b74be6','a:2:{s:7:\"version\";s:3:\"1.0\";s:8:\"patterns\";a:0:{}}','off');
-INSERT INTO `wp_options` VALUES (212,'_site_transient_update_plugins','O:8:\"stdClass\":4:{s:12:\"last_checked\";i:1741777118;s:8:\"response\";a:0:{}s:12:\"translations\";a:0:{}s:9:\"no_update\";a:1:{s:24:\"superb-blocks/plugin.php\";O:8:\"stdClass\":10:{s:2:\"id\";s:27:\"w.org/plugins/superb-blocks\";s:4:\"slug\";s:13:\"superb-blocks\";s:6:\"plugin\";s:24:\"superb-blocks/plugin.php\";s:11:\"new_version\";s:5:\"3.5.4\";s:3:\"url\";s:44:\"https://wordpress.org/plugins/superb-blocks/\";s:7:\"package\";s:62:\"https://downloads.wordpress.org/plugin/superb-blocks.3.5.4.zip\";s:5:\"icons\";a:2:{s:2:\"2x\";s:66:\"https://ps.w.org/superb-blocks/assets/icon-256x256.png?rev=2954418\";s:2:\"1x\";s:66:\"https://ps.w.org/superb-blocks/assets/icon-256x256.png?rev=2954418\";}s:7:\"banners\";a:2:{s:2:\"2x\";s:69:\"https://ps.w.org/superb-blocks/assets/banner-1544x500.png?rev=3175593\";s:2:\"1x\";s:68:\"https://ps.w.org/superb-blocks/assets/banner-772x250.png?rev=3175593\";}s:11:\"banners_rtl\";a:0:{}s:8:\"requires\";s:5:\"3.0.1\";}}}','off');
+INSERT INTO `wp_options` VALUES (205,'_site_transient_update_themes','O:8:\"stdClass\":5:{s:12:\"last_checked\";i:1741791808;s:7:\"checked\";a:5:{s:10:\"NewsMaster\";s:3:\"1.0\";s:11:\"newspaperly\";s:3:\"6.2\";s:16:\"twentytwentyfive\";s:3:\"1.0\";s:16:\"twentytwentyfour\";s:3:\"1.3\";s:17:\"twentytwentythree\";s:3:\"1.6\";}s:8:\"response\";a:1:{s:16:\"twentytwentyfive\";a:6:{s:5:\"theme\";s:16:\"twentytwentyfive\";s:11:\"new_version\";s:3:\"1.1\";s:3:\"url\";s:46:\"https://wordpress.org/themes/twentytwentyfive/\";s:7:\"package\";s:62:\"https://downloads.wordpress.org/theme/twentytwentyfive.1.1.zip\";s:8:\"requires\";s:3:\"6.7\";s:12:\"requires_php\";s:3:\"7.2\";}}s:9:\"no_update\";a:3:{s:11:\"newspaperly\";a:6:{s:5:\"theme\";s:11:\"newspaperly\";s:11:\"new_version\";s:3:\"6.2\";s:3:\"url\";s:41:\"https://wordpress.org/themes/newspaperly/\";s:7:\"package\";s:57:\"https://downloads.wordpress.org/theme/newspaperly.6.2.zip\";s:8:\"requires\";b:0;s:12:\"requires_php\";s:3:\"4.0\";}s:16:\"twentytwentyfour\";a:6:{s:5:\"theme\";s:16:\"twentytwentyfour\";s:11:\"new_version\";s:3:\"1.3\";s:3:\"url\";s:46:\"https://wordpress.org/themes/twentytwentyfour/\";s:7:\"package\";s:62:\"https://downloads.wordpress.org/theme/twentytwentyfour.1.3.zip\";s:8:\"requires\";s:3:\"6.4\";s:12:\"requires_php\";s:3:\"7.0\";}s:17:\"twentytwentythree\";a:6:{s:5:\"theme\";s:17:\"twentytwentythree\";s:11:\"new_version\";s:3:\"1.6\";s:3:\"url\";s:47:\"https://wordpress.org/themes/twentytwentythree/\";s:7:\"package\";s:63:\"https://downloads.wordpress.org/theme/twentytwentythree.1.6.zip\";s:8:\"requires\";s:3:\"6.1\";s:12:\"requires_php\";s:3:\"5.6\";}}s:12:\"translations\";a:0:{}}','off');
+INSERT INTO `wp_options` VALUES (209,'theme_mods_NewsMaster','a:4:{i:0;b:0;s:18:\"nav_menu_locations\";a:1:{s:9:\"main_menu\";i:2;}s:18:\"custom_css_post_id\";i:-1;s:16:\"sidebars_widgets\";a:2:{s:4:\"time\";i:1741778668;s:4:\"data\";a:1:{s:19:\"wp_inactive_widgets\";a:14:{i:0;s:7:\"block-2\";i:1;s:7:\"block-3\";i:2;s:7:\"block-4\";i:3;s:7:\"block-5\";i:4;s:7:\"block-6\";i:5;s:13:\"custom_html-8\";i:6;s:14:\"recent-posts-2\";i:7;s:13:\"custom_html-9\";i:8;s:13:\"custom_html-5\";i:9;s:13:\"custom_html-6\";i:10;s:13:\"custom_html-7\";i:11;s:13:\"custom_html-2\";i:12;s:13:\"custom_html-3\";i:13;s:13:\"custom_html-4\";}}}}','on');
+INSERT INTO `wp_options` VALUES (222,'_site_transient_update_plugins','O:8:\"stdClass\":4:{s:12:\"last_checked\";i:1741779570;s:8:\"response\";a:0:{}s:12:\"translations\";a:0:{}s:9:\"no_update\";a:1:{s:24:\"superb-blocks/plugin.php\";O:8:\"stdClass\":10:{s:2:\"id\";s:27:\"w.org/plugins/superb-blocks\";s:4:\"slug\";s:13:\"superb-blocks\";s:6:\"plugin\";s:24:\"superb-blocks/plugin.php\";s:11:\"new_version\";s:5:\"3.5.4\";s:3:\"url\";s:44:\"https://wordpress.org/plugins/superb-blocks/\";s:7:\"package\";s:62:\"https://downloads.wordpress.org/plugin/superb-blocks.3.5.4.zip\";s:5:\"icons\";a:2:{s:2:\"2x\";s:66:\"https://ps.w.org/superb-blocks/assets/icon-256x256.png?rev=2954418\";s:2:\"1x\";s:66:\"https://ps.w.org/superb-blocks/assets/icon-256x256.png?rev=2954418\";}s:7:\"banners\";a:2:{s:2:\"2x\";s:69:\"https://ps.w.org/superb-blocks/assets/banner-1544x500.png?rev=3175593\";s:2:\"1x\";s:68:\"https://ps.w.org/superb-blocks/assets/banner-772x250.png?rev=3175593\";}s:11:\"banners_rtl\";a:0:{}s:8:\"requires\";s:5:\"3.0.1\";}}}','off');
+INSERT INTO `wp_options` VALUES (228,'_site_transient_timeout_wp_theme_files_patterns-da06e84dc07ee157c2d4d2a943b74be6','1741795622','off');
+INSERT INTO `wp_options` VALUES (229,'_site_transient_wp_theme_files_patterns-da06e84dc07ee157c2d4d2a943b74be6','a:2:{s:7:\"version\";s:3:\"1.0\";s:8:\"patterns\";a:0:{}}','off');
+INSERT INTO `wp_options` VALUES (230,'_site_transient_timeout_theme_roots','1741795623','off');
+INSERT INTO `wp_options` VALUES (231,'_site_transient_theme_roots','a:5:{s:10:\"NewsMaster\";s:7:\"/themes\";s:11:\"newspaperly\";s:7:\"/themes\";s:16:\"twentytwentyfive\";s:7:\"/themes\";s:16:\"twentytwentyfour\";s:7:\"/themes\";s:17:\"twentytwentythree\";s:7:\"/themes\";}','off');
 /*!40000 ALTER TABLE `wp_options` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -319,7 +319,7 @@ CREATE TABLE `wp_postmeta` (
   PRIMARY KEY (`meta_id`),
   KEY `post_id` (`post_id`),
   KEY `meta_key` (`meta_key`(191))
-) ENGINE=InnoDB AUTO_INCREMENT=134 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=142 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -441,6 +441,14 @@ INSERT INTO `wp_postmeta` VALUES (130,37,'_menu_item_url','#');
 INSERT INTO `wp_postmeta` VALUES (131,26,'_wp_trash_meta_status','publish');
 INSERT INTO `wp_postmeta` VALUES (132,26,'_wp_trash_meta_time','1741776105');
 INSERT INTO `wp_postmeta` VALUES (133,15,'_customize_restore_dismissed','1');
+INSERT INTO `wp_postmeta` VALUES (134,38,'_edit_lock','1741778607:1');
+INSERT INTO `wp_postmeta` VALUES (135,39,'_wp_attached_file','2025/03/screenshot.png');
+INSERT INTO `wp_postmeta` VALUES (136,39,'_wp_attachment_metadata','a:6:{s:5:\"width\";i:1200;s:6:\"height\";i:900;s:4:\"file\";s:22:\"2025/03/screenshot.png\";s:8:\"filesize\";i:360657;s:5:\"sizes\";a:4:{s:6:\"medium\";a:5:{s:4:\"file\";s:22:\"screenshot-300x225.png\";s:5:\"width\";i:300;s:6:\"height\";i:225;s:9:\"mime-type\";s:9:\"image/png\";s:8:\"filesize\";i:36994;}s:5:\"large\";a:5:{s:4:\"file\";s:23:\"screenshot-1024x768.png\";s:5:\"width\";i:1024;s:6:\"height\";i:768;s:9:\"mime-type\";s:9:\"image/png\";s:8:\"filesize\";i:275166;}s:9:\"thumbnail\";a:5:{s:4:\"file\";s:22:\"screenshot-150x150.png\";s:5:\"width\";i:150;s:6:\"height\";i:150;s:9:\"mime-type\";s:9:\"image/png\";s:8:\"filesize\";i:18060;}s:12:\"medium_large\";a:5:{s:4:\"file\";s:22:\"screenshot-768x576.png\";s:5:\"width\";i:768;s:6:\"height\";i:576;s:9:\"mime-type\";s:9:\"image/png\";s:8:\"filesize\";i:175091;}}s:10:\"image_meta\";a:12:{s:8:\"aperture\";s:1:\"0\";s:6:\"credit\";s:0:\"\";s:6:\"camera\";s:0:\"\";s:7:\"caption\";s:0:\"\";s:17:\"created_timestamp\";s:1:\"0\";s:9:\"copyright\";s:0:\"\";s:12:\"focal_length\";s:1:\"0\";s:3:\"iso\";s:1:\"0\";s:13:\"shutter_speed\";s:1:\"0\";s:5:\"title\";s:0:\"\";s:11:\"orientation\";s:1:\"0\";s:8:\"keywords\";a:0:{}}}');
+INSERT INTO `wp_postmeta` VALUES (137,40,'_wp_attached_file','2025/03/cropped-screenshot.png');
+INSERT INTO `wp_postmeta` VALUES (138,40,'_wp_attachment_context','site-icon');
+INSERT INTO `wp_postmeta` VALUES (139,40,'_wp_attachment_metadata','a:6:{s:5:\"width\";i:512;s:6:\"height\";i:512;s:4:\"file\";s:30:\"2025/03/cropped-screenshot.png\";s:8:\"filesize\";i:142263;s:5:\"sizes\";a:6:{s:6:\"medium\";a:5:{s:4:\"file\";s:30:\"cropped-screenshot-300x300.png\";s:5:\"width\";i:300;s:6:\"height\";i:300;s:9:\"mime-type\";s:9:\"image/png\";s:8:\"filesize\";i:58372;}s:9:\"thumbnail\";a:5:{s:4:\"file\";s:30:\"cropped-screenshot-150x150.png\";s:5:\"width\";i:150;s:6:\"height\";i:150;s:9:\"mime-type\";s:9:\"image/png\";s:8:\"filesize\";i:17951;}s:13:\"site_icon-270\";a:5:{s:4:\"file\";s:30:\"cropped-screenshot-270x270.png\";s:5:\"width\";i:270;s:6:\"height\";i:270;s:9:\"mime-type\";s:9:\"image/png\";s:8:\"filesize\";i:48993;}s:13:\"site_icon-192\";a:5:{s:4:\"file\";s:30:\"cropped-screenshot-192x192.png\";s:5:\"width\";i:192;s:6:\"height\";i:192;s:9:\"mime-type\";s:9:\"image/png\";s:8:\"filesize\";i:27331;}s:13:\"site_icon-180\";a:5:{s:4:\"file\";s:30:\"cropped-screenshot-180x180.png\";s:5:\"width\";i:180;s:6:\"height\";i:180;s:9:\"mime-type\";s:9:\"image/png\";s:8:\"filesize\";i:24492;}s:12:\"site_icon-32\";a:5:{s:4:\"file\";s:28:\"cropped-screenshot-32x32.png\";s:5:\"width\";i:32;s:6:\"height\";i:32;s:9:\"mime-type\";s:9:\"image/png\";s:8:\"filesize\";i:1596;}}s:10:\"image_meta\";a:12:{s:8:\"aperture\";s:1:\"0\";s:6:\"credit\";s:0:\"\";s:6:\"camera\";s:0:\"\";s:7:\"caption\";s:0:\"\";s:17:\"created_timestamp\";s:1:\"0\";s:9:\"copyright\";s:0:\"\";s:12:\"focal_length\";s:1:\"0\";s:3:\"iso\";s:1:\"0\";s:13:\"shutter_speed\";s:1:\"0\";s:5:\"title\";s:0:\"\";s:11:\"orientation\";s:1:\"0\";s:8:\"keywords\";a:0:{}}}');
+INSERT INTO `wp_postmeta` VALUES (140,38,'_wp_trash_meta_status','publish');
+INSERT INTO `wp_postmeta` VALUES (141,38,'_wp_trash_meta_time','1741778624');
 /*!40000 ALTER TABLE `wp_postmeta` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -480,7 +488,7 @@ CREATE TABLE `wp_posts` (
   KEY `type_status_date` (`post_type`,`post_status`,`post_date`,`ID`),
   KEY `post_parent` (`post_parent`),
   KEY `post_author` (`post_author`)
-) ENGINE=InnoDB AUTO_INCREMENT=38 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=41 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -526,6 +534,9 @@ INSERT INTO `wp_posts` VALUES (34,1,'2025-03-12 10:41:45','2025-03-12 10:41:45',
 INSERT INTO `wp_posts` VALUES (35,1,'2025-03-12 10:41:45','2025-03-12 10:41:45','','Categories','','publish','closed','closed','','categories','','','2025-03-12 10:41:45','2025-03-12 10:41:45','',0,'http://newvn.local/categories/',3,'nav_menu_item','',0);
 INSERT INTO `wp_posts` VALUES (36,1,'2025-03-12 10:41:45','2025-03-12 10:41:45','','About','','publish','closed','closed','','about','','','2025-03-12 10:41:45','2025-03-12 10:41:45','',0,'http://newvn.local/about/',4,'nav_menu_item','',0);
 INSERT INTO `wp_posts` VALUES (37,1,'2025-03-12 10:41:45','2025-03-12 10:41:45','','Contact','','publish','closed','closed','','contact','','','2025-03-12 10:41:45','2025-03-12 10:41:45','',0,'http://newvn.local/contact/',5,'nav_menu_item','',0);
+INSERT INTO `wp_posts` VALUES (38,1,'2025-03-12 11:23:44','2025-03-12 11:23:44','{\n    \"blogname\": {\n        \"value\": \"Theme NewsMaster\",\n        \"type\": \"option\",\n        \"user_id\": 1,\n        \"date_modified_gmt\": \"2025-03-12 11:20:27\"\n    },\n    \"blogdescription\": {\n        \"value\": \"Demo c\\u00e1ch t\\u1ea1o m\\u1ed9t theme \\u0111\\u01a1n gi\\u1ea3n\",\n        \"type\": \"option\",\n        \"user_id\": 1,\n        \"date_modified_gmt\": \"2025-03-12 11:21:27\"\n    },\n    \"site_icon\": {\n        \"value\": 40,\n        \"type\": \"option\",\n        \"user_id\": 1,\n        \"date_modified_gmt\": \"2025-03-12 11:23:27\"\n    }\n}','','','trash','closed','closed','','cef7fffe-28cb-4577-aca7-2778a3950092','','','2025-03-12 11:23:44','2025-03-12 11:23:44','',0,'http://newvn.local/?p=38',0,'customize_changeset','',0);
+INSERT INTO `wp_posts` VALUES (39,1,'2025-03-12 11:23:03','2025-03-12 11:23:03','','screenshot','','inherit','open','closed','','screenshot','','','2025-03-12 11:23:03','2025-03-12 11:23:03','',0,'http://newvn.local/wp-content/uploads/2025/03/screenshot.png',0,'attachment','image/png',0);
+INSERT INTO `wp_posts` VALUES (40,1,'2025-03-12 11:23:17','2025-03-12 11:23:17','http://newvn.local/wp-content/uploads/2025/03/cropped-screenshot.png','cropped-screenshot.png','','inherit','open','closed','','cropped-screenshot-png','','','2025-03-12 11:23:17','2025-03-12 11:23:17','',39,'http://newvn.local/wp-content/uploads/2025/03/cropped-screenshot.png',0,'attachment','image/png',0);
 /*!40000 ALTER TABLE `wp_posts` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -668,7 +679,7 @@ CREATE TABLE `wp_usermeta` (
   PRIMARY KEY (`umeta_id`),
   KEY `user_id` (`user_id`),
   KEY `meta_key` (`meta_key`(191))
-) ENGINE=InnoDB AUTO_INCREMENT=21 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=24 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -696,6 +707,8 @@ INSERT INTO `wp_usermeta` VALUES (16,1,'session_tokens','a:2:{s:64:\"2271ce98c81
 INSERT INTO `wp_usermeta` VALUES (17,1,'wp_dashboard_quick_press_last_post_id','4');
 INSERT INTO `wp_usermeta` VALUES (19,1,'wp_persisted_preferences','a:2:{s:22:\"core/customize-widgets\";a:1:{s:12:\"welcomeGuide\";b:0;}s:9:\"_modified\";s:24:\"2025-03-11T10:05:11.567Z\";}');
 INSERT INTO `wp_usermeta` VALUES (20,1,'spbaddons_notice_delay_addons_delayed','1741776069');
+INSERT INTO `wp_usermeta` VALUES (21,1,'wp_user-settings','libraryContent=browse');
+INSERT INTO `wp_usermeta` VALUES (22,1,'wp_user-settings-time','1741778663');
 /*!40000 ALTER TABLE `wp_usermeta` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -743,4 +756,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2025-03-12 18:13:02
+-- Dump completed on 2025-03-12 22:37:49
